@@ -16,17 +16,16 @@ const http = require('http');
 const fs = require("fs");
 const server2 = http.createServer((req,res)=>{
     fs.appendFile("log.txt", `Request made at: ${Date.now()}: ${req.url}\n`, (err,data)=>{
-        switch(req.url){
-            case "/":
-                res.end("Welcome to Home Page");
-                break;
-            case "/about":
-                res.end("I am Shreyas, a backend developer");
-                break;
-            default:
-                res.end("404 Not Found");
-        }
-    })
+    if(req.url === "/"){
+        res.end("Welcome to Home Page");
+    }
+    else if(req.url === "/about"){
+        res.end("I am Shreya, a backend developer");
+    }
+    else{
+        res.end("404 Not Found");
+    }
+    });
 });
 
 server2.listen(8001, ()=> console.log("Server2 started at port2"));
