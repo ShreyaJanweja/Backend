@@ -15,6 +15,7 @@ const http = require('http');
 //let's perform a task using fs module and server (jab bhi koi incoming request ayegi toh hum log bnayenge ek file jisme request ka time,data store hoga)
 const fs = require("fs");
 const server2 = http.createServer((req,res)=>{
+    if(req.url == "/favicon.io") return res.end();
     fs.appendFile("log.txt", `Request made at: ${Date.now()}: ${req.url}\n`, (err,data)=>{
     if(req.url === "/"){
         res.end("Welcome to Home Page");
