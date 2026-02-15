@@ -58,7 +58,6 @@
 
 
 //LEC-9 HTTP Mthods
-//LEC - 8 Handling URL'S (installed node modules)
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
