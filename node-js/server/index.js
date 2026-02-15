@@ -1,4 +1,4 @@
-//building HTTP server
+// // building HTTP server
 // const http = require('http'); 
 // const myServer = http.createServer((req,res)=>{
 //     console.log(req);
@@ -57,22 +57,50 @@
 
 
 
-//LEC-9 HTTP Mthods
-const http = require('http');
-const fs = require('fs');
-const url = require('url');
+// //LEC-9 HTTP Mthods
+// const http = require('http');
+// const fs = require('fs');
+// const url = require('url');
 
- const server3 = http.createServer((req,res)=>{
-    if(req.url == "/favicon.ico") return res.end();
-    const myUrl = url.parse(req.url,true);
-    console.log(myUrl);
-    fs.appendFile("log.txt", `New Request: ${Date.now()}: ${req.method} ${req.url}\n`,(err,data)=>{
-        if(myUrl.pathname == "/") res.end("Welcome to Home Page");
-        else if(myUrl.pathname=="/about") { 
-            const username = myUrl.query.myname;
-            res.end(`Hi, ${username}`);
-        }
-        else res.end("404 Not Found");
-    });
- });
-server3.listen(8001,()=> console.log("Server3 started at port 8002"));
+//  const server3 = http.createServer((req,res)=>{
+//     if(req.url == "/favicon.ico") return res.end();
+//     const myUrl = url.parse(req.url,true);
+//     console.log(myUrl);
+//     fs.appendFile("log.txt", `New Request: ${Date.now()}: ${req.method} ${req.url}\n`,(err,data)=>{
+//         if(myUrl.pathname == "/") res.end("Welcome to Home Page");
+//         else if(myUrl.pathname=="/about") { 
+//             const username = myUrl.query.myname;
+//             res.end(`Hi, ${username}`);
+//         }
+//         else res.end("404 Not Found");
+//     });
+//  });
+// server3.listen(8001,()=> console.log("Server3 started at port 8002"));
+
+
+
+//---------------------------
+//lec. 10
+//STARTING WITH EXPRESS IN NODE JS 
+
+const express = require('express');
+
+const app = express();
+app.get("/", (req,res)=>{
+    return res.end("Hello from Home Page");
+});
+
+app.get("/about", (req,res)=>{
+    return res.end("Hello from About Page"+ "\n Hey "+req.query.name);
+});
+
+app.listen(8000, ()=> console.log("Server3 started at port 8001"));
+
+//so as you can see that express can make your code look so much easier , simpler , easy to understand
+
+//basic routing 
+// app.METHOD(PATH, HANDLER)
+//- app is an instance of express
+//METHOD is an HTTP request method , in lowercase
+//PATH is a path on the server
+//HANDLER is the function executed when the route is matched
