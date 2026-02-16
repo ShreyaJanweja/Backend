@@ -97,7 +97,6 @@ app.get("/about", (req,res)=>{
 app.listen(8000, ()=> console.log("Server3 started at port 8001"));
 
 //so as you can see that express can make your code look so much easier , simpler , easy to understand
-
 //basic routing 
 // app.METHOD(PATH, HANDLER)
 //- app is an instance of express
