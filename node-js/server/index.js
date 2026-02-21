@@ -94,7 +94,7 @@ app.get("/about", (req,res)=>{
     return res.end("Hello from About Page"+ "\n Hey "+req.query.name);
 });
 
-app.listen(8000, ()=> console.log("Server3 started at port 8001"));
+app.listen(8000, ()=> console.log("Server3 started at port 8000"));
 
 //so as you can see that express can make your code look so much easier , simpler , easy to understand
 //basic routing 
