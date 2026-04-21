@@ -13,6 +13,7 @@
 
 
 // //let's perform a task using fs module and server (jab bhi koi incoming request ayegi toh hum log bnayenge ek file jisme request ka time,data store hoga)
+// const http = require('http');
 // const fs = require("fs");
 // const server2 = http.createServer((req,res)=>{
 //     if(req.url == "/favicon.io") return res.end();
@@ -87,11 +88,11 @@ const express = require('express');
 
 const app = express();
 app.get("/", (req,res)=>{
-    return res.end("Hello from Home Page");
+    return res.send("Hello from Home Page");
 });
 
 app.get("/about", (req,res)=>{
-    return res.end("Hello from About Page"+ "\n Hey "+req.query.name);
+    return res.send("Hello from About Page" + "\n Hey " + req.query.name);
 });
 
 app.listen(8000, ()=> console.log("Server3 started at port 8000"));

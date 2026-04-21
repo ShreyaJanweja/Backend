@@ -58,3 +58,31 @@ New Request: 1770725735716: /about?myname=srishti&userId=1&serach=girl
 New Request: 1770725743794: /
 New Request: 1770725749772: /about
 New Request: 1770734048553: GET /
+Request made at: 1776696921449: /
+Request made at: 1776696921481: /favicon.ico
+Request made at: 1776697098431: /about
+Request made at: 1776697098513: /favicon.ico
+Request made at: 1776697107924: /
+Request made at: 1776697107979: /favicon.ico
+Request made at: 1776697114474: /about
+Request made at: 1776697114523: /favicon.ico
+Request made at: 1776697119819: /about
+Request made at: 1776697119857: /favicon.ico
+Request made at: 1776697122938: /about
+Request made at: 1776697122970: /favicon.ico
+Request made at: 1776697124139: /about
+Request made at: 1776697124193: /favicon.ico
+Request made at: 1776697128889: /
+Request made at: 1776697128928: /favicon.ico
+Request made at: 1776697134152: /about
+Request made at: 1776697134195: /favicon.ico
+Request made at: 1776697161481: /hello
+Request made at: 1776697161543: /favicon.ico
+Request made at: 1776697176625: /favicon.ico
+Request made at: 1776697179742: /favicon.ico
+Request made at: 1776697191936: /
+Request made at: 1776697191987: /favicon.ico
+Request made at: 1776697195091: /
+Request made at: 1776697195126: /favicon.ico
+Request made at: 1776697196010: /
+Request made at: 1776697196058: /favicon.ico
