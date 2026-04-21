@@ -47,3 +47,25 @@ means for eg. it can change
 
 
 
+
+
+
+
+
+----------------------------------------
+what is Rest API or RestFull API
+
+ye ek Api ki type hoti hai jiske kuch standard rules hote hai 
+RULES 
+1. it works on server client architecture
+
+
+ 2. always respect all http methods
+ GET   POST   PATCH   PUT   DELETE 
+ GET / user - users data read kro and return data
+ POST / user - handle new user creation
+ PATCH / user - update the user (data mutation)
+ 
+
+
+
