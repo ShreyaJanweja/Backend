@@ -54,3 +54,29 @@ browsers jo hai vo sirf get request kr skte hai
 
 
 
+---------------------------------
+POSTMAN 
+it's a utility tool which helps you in API testing and documentation
+
+go to postman , select http method then type in the url
+for an example - http://localhost:8000/users
+so you'll see all the users in the form of HTML document (lists)
+
+Status 200 OK - means request successful, the server has responded as successful.
+
+Time- time hmesha jitna kam ho ske utna hona chahiye, for an ex. agar time tumhara 500ms ya 1000ms which is 
+equal to 1 sec. lag rha hai toh it's a bad thing , time 3-4 ms tk hona chahiye , so target is to always decrease the time.
+
+Size of API request-
+
+
+now , GET request hmne already last video mei kr li thi 
+
+POST REQUEST- maine methods mei POST request select ki vhi same URL daala or 
+body pe click krke x-www-form type aayega uspe click kro 
+key-value pairs ayenge usme values fill kr do - agar koi already existing database hota toh data usme append ho jata 
+abhi aise ni h toh hm JSON file mei iss data ko append kre ge vo index.js file mei code h 
+
+
+
+
