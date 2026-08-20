@@ -1,0 +1,56 @@
+REST API - JSON 
+(hum rest api's bna rhe hai jo JSON ko support krega)
+-hum isme basically users ke saath deal kre ge
+    |
+GET /users - List all users as JSON
+GET /users/1 - get the user with id 1
+GET /users/2 - get the user with id 2
+
+-ek post route hona chahiye jo new users ko create kre ga
+    |
+POST /users - create new user 
+
+PATCH /user/id - Edit the user with ID 1 or any id
+
+DELETE /users/1 - delete the user with id 1 
+
+
+
+->     https://mockaroo.com/    - a website the generates fake data for testing purposes
+->     if you want to format a document like maine abhi mock_data.json mei 1000 users ki entry ki 
+toh usse format krna hai toh right click krke format document kre acha code bn jega jo ki
+readable hoga 
+
+
+//notes
+jo humara server hota hai vo ek hybrid server hona chahiye jo 
+mobile apps, browser sab ko support kre 
+jaise ki hybrid server ka example
+
+GET /users - HTML document render - agar kisine browser pe khola toh 
+GET /api/users - List all users as JSON - agar kisi mobile developer ne khola toh ye khule ga
+so in this way it is now an hybrid server 
+
+matlab agar uske aage /api hai toh vo json data show kre ga nhi toh vo ek HTML documnet show krega
+
+-> now next task
+GET /api/users/1 - get the user with id 1
+GET /api/users/2 - get the user with id 2
+
+ab humare pass n number of users ho skte h toh hum 
+get id 1 get id 2 ye sab toh nhi kr skte manually 
+therefore we us 
+Dynamic Path Parameters
+GET /api/users/:id 
+:id -> variable | dynamic 
+
+
+
+POST /api/users - create new user 
+PATCH /api/user/id - Edit the user with ID 1 or any id
+DELETE /api/users/1 - delete the user with id 1 
+
+browsers jo hai vo sirf get request kr skte hai 
+
+
+
